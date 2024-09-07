@@ -136,6 +136,11 @@ footer {
   color: #FFF;
 }
 
+footer a {
+  text-decoration: none;
+  color: var(--primary-color-midnight-blue);
+}
+
 .main-hero {
   background-image: url(resources/Main_Heading.jpg);
   background-repeat: no-repeat;
