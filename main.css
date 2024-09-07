@@ -1,0 +1,253 @@
+/* VARIABLES */
+.site-padding {
+  padding: 30px;
+}
+
+.site-flex {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* GLOBAL STYLES */
+:root {
+  --primary-color-midnight-blue: #003B6D;
+  --primary-color-sky-blue: #6699CC;
+  --secondary-color-dim-gray: #676767;
+  --secondary-color-silver: #BDBDBD;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  margin-block-start: 0;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+p {
+  line-height: 1.5;
+}
+
+h1 {
+  font-size: 3rem;
+  color: var(--primary-color-midnight-blue);
+}
+
+.text-highlight-on-hover:hover {
+  color: var(--primary-color-sky-blue)
+}
+
+.nav-links {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.nav-links a {
+  padding: 20px;
+  text-decoration: none;
+  font-size: larger;
+  font-weight: bold;
+  color: var(--primary-color-midnight-blue);
+}
+
+.nav-links a:hover {
+  color: var(--primary-color-sky-blue);
+}
+
+a.nav-link-active {
+  background-color: var(--primary-color-midnight-blue);
+  color: #FFF;
+}
+
+.two-cols {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.two-cols .column {
+  padding: 50px;
+}
+
+.img-col {
+  width: 100%;
+}
+
+.img-col img {
+  width: 100%;
+}
+
+.text-col {
+  width: 100%;
+}
+
+.card-col {
+  width: 100%;
+  text-align: center;
+}
+
+.card-col img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 50%;
+  display: block;
+}
+
+.card-inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  margin: 20px;
+  border-radius: 10px;
+  background-color: var(--secondary-color-silver);
+}
+
+.button-styling {
+  display: inline-block;
+  padding: 15px 45px;
+  background-color: var(--primary-color-midnight-blue);
+  color: #FFF;
+  font-weight: bold;
+  text-transform: uppercase;
+  border-radius: 30px;
+  text-decoration: none;
+  margin-top: 20px;
+}
+
+.button-styling:hover {
+  background-color: var(--primary-color-sky-blue);
+}
+
+footer {
+  padding: 15px 0;
+  background-color: var(--primary-color-sky-blue);
+  text-align: center;
+  color: #FFF;
+}
+
+.main-hero {
+  background-image: url(resources/Main_Heading.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+}
+
+.main-hero h1 {
+  color: #FFF;
+  font-size: 90px;
+  padding: 150px 0 150px;
+}
+
+#main-logo {
+  width: 200px;
+  max-width: 100%;
+}
+
+.secondary-heading {
+  background-color: var(--primary-color-sky-blue);
+  text-align: center;
+}
+
+.secondary-heading h1 {
+  color: #FFF;
+  font-size: 2rem;
+  vertical-align: middle;
+  margin: 0;
+}
+
+.submit-label {
+  font-size: smaller;
+  padding-top: 5px;
+}
+
+label {
+  padding-bottom: 5px;
+  display: block;
+}
+
+input {
+  margin-bottom: 10px;
+}
+
+@media (min-width: 768px) {
+  .img-col {
+    width: 40%;
+  }
+
+  .text-col {
+    width: 60%;
+  }
+
+  .two-cols {
+    flex-wrap: nowrap;
+  }
+
+  .card-col {
+    width: 33.33%;
+  }
+
+  .site-flex {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .nav-links {
+    flex-direction: row;
+  }
+
+  .secondary-heading h1 {
+    font-size: 4rem;
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    transform: translate3d(0, 40px, 0)
+  }
+
+  to {
+    transform: translate3d(0, 0, 0);
+    opacity: 1
+  }
+}
+
+@-webkit-keyframes fadeInUp {
+  from {
+    transform: translate3d(0, 60px, 0);
+  }
+
+  to {
+    transform: translate3d(0, 0, 0);
+    opacity: 1
+  }
+}
+
+.animated {
+  animation-duration: 1s;
+  animation-fill-mode: both;
+  -webkit-animation-duration: 1s;
+  -webkit-animation-fill-mode: both
+}
+
+.animated-fade-in-up {
+  opacity: 0
+}
+
+.fade-in-up {
+  opacity: 0;
+  animation-name: fadeInUp;
+  -webkit-animation-name: fadeInUp;
+}
