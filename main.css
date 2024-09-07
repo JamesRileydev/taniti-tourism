@@ -84,6 +84,7 @@ a.nav-link-active {
 .img-col img {
   width: 100%;
   box-shadow: var(--accent-color) 3px 3px 15px;
+  border-radius: 5px;
 }
 
 .text-col {
