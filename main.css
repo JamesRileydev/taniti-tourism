@@ -77,6 +77,22 @@ a.nav-link-active {
   padding: 50px;
 }
 
+.additional-info {
+  padding: 50px;
+  background-color: var(--secondary-color);
+  color: #FFF;
+}
+
+.additional-info a {
+  text-decoration: none;
+  color: var(--primary-color);
+}
+
+.additional-info a:hover {
+  text-decoration: underline;
+  color: var(--accent-color);
+}
+
 .img-col {
   width: 100%;
 }
@@ -139,7 +155,7 @@ footer {
 
 footer a {
   text-decoration: none;
-  color: var(--accent-color);
+  color: var(--primary-color);
 }
 
 .main-hero {
